@@ -1,13 +1,13 @@
 <template>
     <h2>Counter</h2>
     <p>{{ counter }} <sup>2</sup> = {{ counter * counter }}</p>
-
+ <!-- 
+    <p>{{ counter }} <sup>2</sup> = {{ getSquareValue() }}</p>
+    <p>{{ counter }} <sup>2</sup> = {{ getSquareValue() }}</p> 
     <p>{{ counter }} <sup>2</sup> = {{ getSquareValue() }}</p>
     <p>{{ counter }} <sup>2</sup> = {{ getSquareValue() }}</p>
     <p>{{ counter }} <sup>2</sup> = {{ getSquareValue() }}</p>
-    <p>{{ counter }} <sup>2</sup> = {{ getSquareValue() }}</p>
-    <p>{{ counter }} <sup>2</sup> = {{ getSquareValue() }}</p>
-
+--> 
 
 
     <div>
