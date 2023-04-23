@@ -2,12 +2,6 @@ import { shallowMount, mount } from '@vue/test-utils'
 import Counter from '@/components/Counter'
 
 describe('counter componer', () =>{
-
-
-
-
-  
-
         /*
         test('debe de hacer match conn el snapshot', ()=>{
 
@@ -27,6 +21,18 @@ describe('counter componer', () =>{
  const h2value= wrapper.find('h2').text()
  
  expect(h2value ).toBe('Counter')
+
+ })
+
+
+
+ test('El valor por defecto debe ser 100 en el p', () => {
+     //wrapper
+
+     //ptags
+
+     // expect segundo p === 100
+        
 
  })
 
