@@ -1,42 +1,50 @@
 <template>
-    <h2>Counter</h2>
-    <p>{{ counter }} <sup>2</sup> = {{ counter * counter }}</p>
+    <h2>{{ customTitle }} </h2>
+    <p> {{ counter }} <sup>2</sup> = {{ squareCounter }} </p>
 
-
-    <div>
-        <button v-on:click="mas()" >+1</button>
-        <button @click="menos()">-1</button>
+    <div class="bottons-container">
+        <button @click="increase">+1</button>
+        <button @click="decrease">-1</button>
     </div>
-        
+
 </template>
 
 <script>
-export default{
-    data(){
-        return{
-             counter : 5
-        }    
-
-    },
-    methods:{
-        getSquareValue(){
-            console.log('getSquareValue')
-            return this.counter * this.counter
-        },
-        
-        mas(){
-           this.counter++           
-        },
-
-        menos(){
-            this.counter--
+export default {
+    props: {
+        title: String,
+        start: {
+            type: Number,
+            default: 100,
+            // required: true
+            validator( value ) {
+                return value >= 0
+            }
         }
     },
-
-    computed:{
-        squareCounter(){
-            console.log('computed squareCounter')
+    // name: 'Patito'
+    data() {
+        return {
+            counter: this.start
+        }
+    },
+    methods: {
+        getSquareValue() {
             return this.counter * this.counter
+        },
+        increase() {
+            this.counter++
+        },
+        decrease() {
+            this.counter--
+        },
+    },
+    computed: {
+        squareCounter() {
+            return this.counter * this.counter
+        },
+        customTitle() {
+            return this.title || 'Counter'
         }
     }
 }
