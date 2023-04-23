@@ -1,5 +1,5 @@
 
-describe( 'Example cComponent', () =>{
+describe( 'Example Component', () =>{
 test( 'Debe de ser mayor a 10', () =>{
 
 // arreglar.

@@ -1,17 +1,9 @@
 <template>
     <h2>Counter</h2>
     <p>{{ counter }} <sup>2</sup> = {{ counter * counter }}</p>
- <!-- 
-    <p>{{ counter }} <sup>2</sup> = {{ getSquareValue() }}</p>
-    <p>{{ counter }} <sup>2</sup> = {{ getSquareValue() }}</p> 
-    <p>{{ counter }} <sup>2</sup> = {{ getSquareValue() }}</p>
-    <p>{{ counter }} <sup>2</sup> = {{ getSquareValue() }}</p>
-    <p>{{ counter }} <sup>2</sup> = {{ getSquareValue() }}</p>
---> 
 
 
     <div>
-
         <button v-on:click="mas()" >+1</button>
         <button @click="menos()">-1</button>
     </div>
@@ -48,7 +40,6 @@ export default{
         }
     }
 }
-
 </script>
 
 <style>
