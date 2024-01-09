@@ -28,11 +28,14 @@ describe('counter componer', () =>{
 
  test('El valor por defecto debe ser 100 en el p', () => {
      //wrapper
+     const wrapper = shallowMount( Counter ) 
 
      //ptags
+     const value = wrapper.find('[data-testid="counter"]')
 
      // expect segundo p === 100
-        
+    //  expect ( ptags [1].text()). toBe('100')   
+     expect ( value). toBe('100')   
 
  })
 
